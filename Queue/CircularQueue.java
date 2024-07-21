@@ -89,6 +89,14 @@ public class CircularQueue<E> implements Queue<E> {
         return (this.rear + 1) % this.maxSize == this.front; // @ Modified from OG
     }
 
+    // Check if the queue is full @Custom Method
+    public boolean isFull() {
+        // Move rear up by 2 in a circular manner and check if the result is front.
+        // (If and only if the queue is full, then the extra space in the array must be
+        // skipped. Thus, we do not just increment rear by one, but by two.)
+        return ((this.rear + 2) % this.maxSize) == this.front;
+    }
+
     // Return queue contents @ Custom Method
     public String toString() {
         // If queue is empty
