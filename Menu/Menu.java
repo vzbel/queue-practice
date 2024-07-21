@@ -3,7 +3,6 @@ package Menu;
 import java.util.ArrayList;
 import java.io.File;
 import java.util.Scanner;
-import java.util.Arrays;
 
 public class Menu {
     private File mealsFile; // File contains all menu meals
