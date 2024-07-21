@@ -1,5 +1,7 @@
 package Queue;
 
+// A queue with the rear position begin towards the beginning of the array,
+// and the front position
 public class AQueueAlt<E> implements Queue<E> {
     private E[] array; // Array holding queue elements
     private int front; // Front queue position
