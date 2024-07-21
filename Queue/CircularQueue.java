@@ -1,7 +1,5 @@
 package Queue;
 
-import java.util.Arrays;
-
 // Circular Queue
 public class CircularQueue<E> implements Queue<E> {
     private E[] array; // Array holding queue values.
